@@ -1,7 +1,7 @@
 const Sequelize = require('sequelize');
       
-const sequelize = new Sequelize('Full Stack App-Disney', 'postgres', 'password', {
-    host: 'localhost', 
+const sequelize = new Sequelize(process.env.DATABASE_URL, {
+    
     dialect: 'postgres'  
 });
          

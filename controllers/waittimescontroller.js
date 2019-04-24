@@ -48,7 +48,7 @@ router.put('/edit/:id',validateSession, (req, res) => {
   console.log("user.id => ", req.user.id)
   Ride.update(req.body.waittime, { where: { id: req.params.id, owner: req.user.id }})
     .then(ride => res.status(200).json(ride))
-    .catch(err => res.status({ error: err}))
+    .catch(err => res.status(500).json({ error:err }))
   })
 
 //Allows individual logs to be deleted by the user
