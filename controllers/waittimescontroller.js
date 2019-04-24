@@ -1,7 +1,7 @@
 var express = require('express'); 
 var router = express.Router();  
 var sequelize = require('../db');
-var Ride = sequelize.import('../models/waittimes'); 
+var Ride = sequelize.import('../Models/waittimes'); 
 var validateSession = require('../middleware/validatesession');
 
 //Select * from public.logs ... to return all records in our wait times table

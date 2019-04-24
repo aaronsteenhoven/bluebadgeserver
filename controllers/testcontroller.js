@@ -1,7 +1,7 @@
 var express = require('express'); 
 var router = express.Router();  
 var sequelize = require('../db');
-var TestModel = sequelize.import('../models/test');
+var TestModel = sequelize.import('../Models/test');
 
 router.post('/one', function(req,res){
     res.send("Got a post Request")

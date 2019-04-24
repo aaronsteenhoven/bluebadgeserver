@@ -1,7 +1,7 @@
 var express = require('express')
 var router = express.Router()      //1
 var sequelize = require('../db');
-var User = sequelize.import('../models/user'); 
+var User = sequelize.import('../Models/user'); 
 var bcrypt = require('bcryptjs');
 var jwt = require('jsonwebtoken');
 
